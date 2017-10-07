@@ -1,4 +1,4 @@
 class Report < ApplicationRecord
-  has_many :harassment_type_reports
-  has_many :harassment_types, through: :harassment_type_reports
+  scope :experienced, -> { where(role: 'experienced') }
+  scope :witnessed, -> { where(role: 'witnessed') }
 end
