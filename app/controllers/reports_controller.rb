@@ -14,3 +14,4 @@ class ReportsController < ApplicationController
     params.require(:report).permit(:latitude, :longitude, :role, :date)
   end
 end
+

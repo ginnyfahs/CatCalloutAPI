@@ -20,8 +20,5 @@ ActiveRecord::Schema.define(version: 20171007012752) do
     t.decimal "longitude"
     t.string "role"
     t.datetime "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
-
 end
